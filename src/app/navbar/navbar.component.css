@@ -1,0 +1,13 @@
+a {
+    color: #161416 !important;
+  }
+  a:hover {
+    background-color: rgba(255, 0, 0, 1);
+  }
+  
+  .styled {
+    border: 0;
+    
+    color: #fff;
+   
+}

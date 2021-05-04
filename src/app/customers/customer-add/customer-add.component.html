@@ -1,0 +1,26 @@
+<h3>Ajouter une course</h3>
+
+<form class="form-inline mb-4">
+  <form [formGroup]="customerForm" (submit)="createCustomer()" class="form-inline mb-4">
+    <label class="sr-only" for="Name">Nom</label>
+    <div class="input-group mb-2 mr-sm-2">
+      <input type="text" class="form-control" formControlName="name" placeholder="Entrer votre nom">
+    </div>
+
+    <label class="sr-only" for="Phone">Numero de telephone</label>
+    <div class="input-group mb-2 mr-sm-2">
+      <input type="text" class="form-control" formControlName="phone" placeholder="Numero de telephone">
+    </div>
+
+    <label class="sr-only" for="Depart">Point de depart </label>
+    <div class="input-group mb-2 mr-sm-2">
+      <input type="text" class="form-control" formControlName="depart" placeholder="Point de depart ">
+    </div>
+
+    <label class="sr-only" for="Arriver">Point d'arriver'</label>
+    <div class="input-group mb-2 mr-sm-2">
+      <input type="text" class="form-control" formControlName="arriver" placeholder="Point d'arriver ">
+    </div>
+   
+    <button type="submit" class="favorite styled">Ajouter une course</button>
+  </form>
